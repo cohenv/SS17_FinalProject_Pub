@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AdventureData.Models;
+using AdventureData.Utility;
 
 namespace CS_SS17_Final_Project
 {
@@ -17,14 +19,20 @@ namespace CS_SS17_Final_Project
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void CustomerSearch_Click(object sender, EventArgs e)
         {
+            CustomerUtility Utility = new CustomerUtility();
+
+            string query = textBox1.Text;
+
+            List<Customer> Customers = Utility.FindCustomer(query);
+
+            CustomerDataView.DataSource = Customers;
+
+
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

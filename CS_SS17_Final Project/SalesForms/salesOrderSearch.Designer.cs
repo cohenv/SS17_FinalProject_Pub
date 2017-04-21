@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.salesOrderNumberTxt = new System.Windows.Forms.TextBox();
-            this.salesOrderSearchBut = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.salesOrderSearchBtn = new System.Windows.Forms.Button();
+            this.SalesOrderView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesOrderView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,39 +51,40 @@
             this.salesOrderNumberTxt.Size = new System.Drawing.Size(242, 20);
             this.salesOrderNumberTxt.TabIndex = 1;
             // 
-            // salesOrderSearchBut
+            // salesOrderSearchBtn
             // 
-            this.salesOrderSearchBut.Location = new System.Drawing.Point(370, 10);
-            this.salesOrderSearchBut.Name = "salesOrderSearchBut";
-            this.salesOrderSearchBut.Size = new System.Drawing.Size(75, 23);
-            this.salesOrderSearchBut.TabIndex = 2;
-            this.salesOrderSearchBut.Text = "Search";
-            this.salesOrderSearchBut.UseVisualStyleBackColor = true;
+            this.salesOrderSearchBtn.Location = new System.Drawing.Point(370, 10);
+            this.salesOrderSearchBtn.Name = "salesOrderSearchBtn";
+            this.salesOrderSearchBtn.Size = new System.Drawing.Size(75, 23);
+            this.salesOrderSearchBtn.TabIndex = 2;
+            this.salesOrderSearchBtn.Text = "Search";
+            this.salesOrderSearchBtn.UseVisualStyleBackColor = true;
+            this.salesOrderSearchBtn.Click += new System.EventHandler(this.salesOrderSearchBtn_Click);
             // 
-            // dataGridView1
+            // SalesOrderView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SalesOrderView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 36);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 279);
-            this.dataGridView1.TabIndex = 3;
+            this.SalesOrderView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SalesOrderView.Location = new System.Drawing.Point(16, 36);
+            this.SalesOrderView.Name = "SalesOrderView";
+            this.SalesOrderView.Size = new System.Drawing.Size(543, 279);
+            this.SalesOrderView.TabIndex = 3;
+            this.SalesOrderView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SalesOrderView_CellDoubleClick);
             // 
             // salesOrderSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 327);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.salesOrderSearchBut);
+            this.Controls.Add(this.SalesOrderView);
+            this.Controls.Add(this.salesOrderSearchBtn);
             this.Controls.Add(this.salesOrderNumberTxt);
             this.Controls.Add(this.label1);
             this.Name = "salesOrderSearch";
             this.Text = "salesOrderSearch";
-            this.Load += new System.EventHandler(this.salesOrderSearch_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesOrderView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,7 +94,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox salesOrderNumberTxt;
-        private System.Windows.Forms.Button salesOrderSearchBut;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button salesOrderSearchBtn;
+        private System.Windows.Forms.DataGridView SalesOrderView;
     }
 }

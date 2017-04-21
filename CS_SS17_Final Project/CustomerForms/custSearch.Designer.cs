@@ -2,7 +2,7 @@
 {
     partial class custSearch
     {
-        /// <summary>
+        /// <summary>\\vmware-host\shared folders\documents\visual studio 2015\Projects\CS_SS17_Final Project\CS_SS17_Final Project\CustomerForms\custSearch.cs
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CustomerSearch = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.CustomerDataView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -43,17 +43,16 @@
             this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Customer Search";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // CustomerSearch
             // 
-            this.button1.Location = new System.Drawing.Point(421, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 22);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CustomerSearch.Location = new System.Drawing.Point(421, 6);
+            this.CustomerSearch.Name = "CustomerSearch";
+            this.CustomerSearch.Size = new System.Drawing.Size(64, 22);
+            this.CustomerSearch.TabIndex = 1;
+            this.CustomerSearch.Text = "Search";
+            this.CustomerSearch.UseVisualStyleBackColor = true;
+            this.CustomerSearch.Click += new System.EventHandler(this.CustomerSearch_Click);
             // 
             // textBox1
             // 
@@ -62,29 +61,30 @@
             this.textBox1.Size = new System.Drawing.Size(307, 20);
             this.textBox1.TabIndex = 2;
             // 
-            // dataGridView1
+            // CustomerDataView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CustomerDataView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(519, 248);
-            this.dataGridView1.TabIndex = 3;
+            this.CustomerDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CustomerDataView.Location = new System.Drawing.Point(12, 34);
+            this.CustomerDataView.Name = "CustomerDataView";
+            this.CustomerDataView.Size = new System.Drawing.Size(519, 248);
+            this.CustomerDataView.TabIndex = 3;
             // 
             // custSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 292);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CustomerDataView);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CustomerSearch);
             this.Controls.Add(this.label1);
             this.Name = "custSearch";
             this.Text = "Customer Search";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+         
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,8 +93,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CustomerSearch;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CustomerDataView;
     }
 }

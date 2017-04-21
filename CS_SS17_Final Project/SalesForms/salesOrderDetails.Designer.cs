@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblCompany = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblCompany = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,41 +61,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer";
             // 
-            // lblName
+            // lblPhoneNumber
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(7, 20);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(28, 13);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Test";
-            // 
-            // lblCompany
-            // 
-            this.lblCompany.AutoSize = true;
-            this.lblCompany.Location = new System.Drawing.Point(7, 39);
-            this.lblCompany.Name = "lblCompany";
-            this.lblCompany.Size = new System.Drawing.Size(35, 13);
-            this.lblCompany.TabIndex = 1;
-            this.lblCompany.Text = "label1";
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(7, 77);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(0, 13);
+            this.lblPhoneNumber.TabIndex = 3;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(7, 58);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(35, 13);
+            this.lblEmail.Size = new System.Drawing.Size(0, 13);
             this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "label1";
             // 
-            // lblPhoneNumber
+            // lblCompany
             // 
-            this.lblPhoneNumber.AutoSize = true;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(7, 77);
-            this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(35, 13);
-            this.lblPhoneNumber.TabIndex = 3;
-            this.lblPhoneNumber.Text = "label1";
+            this.lblCompany.AutoSize = true;
+            this.lblCompany.Location = new System.Drawing.Point(7, 39);
+            this.lblCompany.Name = "lblCompany";
+            this.lblCompany.Size = new System.Drawing.Size(0, 13);
+            this.lblCompany.TabIndex = 1;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(7, 20);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(0, 13);
+            this.lblName.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -182,7 +178,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(515, 137);
             this.dataGridView1.TabIndex = 0;
             // 
-            // newSalesOrder
+            // salesOrderDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,7 +189,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "newSalesOrder";
+            this.Name = "salesOrderDetails";
             this.Text = "newSalesOrder";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

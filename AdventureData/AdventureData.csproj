@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,8 +47,11 @@
       <DependentUpon>AdventureWorksLT2012DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
-    <Compile Include="IProductUtility.cs" />
-    <Compile Include="ProductUtility.cs" />
+    <Compile Include="Utility\CustomerUtility.cs" />
+    <Compile Include="Utility\ICustomerUtility.cs" />
+    <Compile Include="Utility\IProductUtility.cs" />
+    <Compile Include="Utility\ISalesUtility.cs" />
+    <Compile Include="Utility\ProductUtility.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerAddress.cs" />
@@ -64,6 +68,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Utility\SalesUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AdventureWorksLT2012DataSet.xsc">
@@ -77,12 +82,12 @@
     <None Include="AdventureWorksLT2012DataSet.xss">
       <DependentUpon>AdventureWorksLT2012DataSet.xsd</DependentUpon>
     </None>
-    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

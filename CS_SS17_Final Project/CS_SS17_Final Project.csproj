@@ -52,6 +52,7 @@
     <Compile Include="AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerForms\CustomerViewModel\CustomerView.cs" />
     <Compile Include="CustomerForms\custSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,12 +83,7 @@
     <Compile Include="CustomerForms\newCust.Designer.cs">
       <DependentUpon>newCust.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductForms\UserControls\ProductUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ProductForms\UserControls\ProductUserControl.Designer.cs">
-      <DependentUpon>ProductUserControl.cs</DependentUpon>
-    </Compile>
+    <Compile Include="ProductForms\ProductView\ProductView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesForms\newSalesOrder.cs">
@@ -126,9 +122,6 @@
     <EmbeddedResource Include="ProductForms\prodSearch.resx">
       <DependentUpon>prodSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductForms\UserControls\ProductUserControl.resx">
-      <DependentUpon>ProductUserControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -159,6 +152,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdventureData\AdventureData.csproj">
+      <Project>{1aa99cc7-d2db-4d0e-b4ca-c66e069daa9a}</Project>
+      <Name>AdventureData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

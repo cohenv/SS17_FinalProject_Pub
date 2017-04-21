@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.prodNameInput = new System.Windows.Forms.TextBox();
-            this.prodNumberInput = new System.Windows.Forms.TextBox();
+            this.prodNameTxt = new System.Windows.Forms.TextBox();
+            this.prodNumberTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.listPriceTxt = new System.Windows.Forms.TextBox();
             this.listPriceInput = new System.Windows.Forms.Label();
             this.addProdBut = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -46,21 +46,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Product Name";
             // 
-            // prodNameInput
+            // prodNameTxt
             // 
-            this.prodNameInput.Location = new System.Drawing.Point(121, 24);
-            this.prodNameInput.Name = "prodNameInput";
-            this.prodNameInput.Size = new System.Drawing.Size(128, 20);
-            this.prodNameInput.TabIndex = 1;
-            this.prodNameInput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.prodNameTxt.Location = new System.Drawing.Point(121, 24);
+            this.prodNameTxt.Name = "prodNameTxt";
+            this.prodNameTxt.Size = new System.Drawing.Size(128, 20);
+            this.prodNameTxt.TabIndex = 1;
+            this.prodNameTxt.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // prodNumberInput
+            // prodNumberTxt
             // 
-            this.prodNumberInput.Location = new System.Drawing.Point(121, 54);
-            this.prodNumberInput.Name = "prodNumberInput";
-            this.prodNumberInput.Size = new System.Drawing.Size(128, 20);
-            this.prodNumberInput.TabIndex = 3;
-            this.prodNumberInput.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.prodNumberTxt.Location = new System.Drawing.Point(121, 54);
+            this.prodNumberTxt.Name = "prodNumberTxt";
+            this.prodNumberTxt.Size = new System.Drawing.Size(128, 20);
+            this.prodNumberTxt.TabIndex = 3;
+            this.prodNumberTxt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -71,12 +71,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Product Number";
             // 
-            // textBox1
+            // listPriceTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(121, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 20);
-            this.textBox1.TabIndex = 5;
+            this.listPriceTxt.Location = new System.Drawing.Point(121, 88);
+            this.listPriceTxt.Name = "listPriceTxt";
+            this.listPriceTxt.Size = new System.Drawing.Size(128, 20);
+            this.listPriceTxt.TabIndex = 5;
             // 
             // listPriceInput
             // 
@@ -95,6 +95,7 @@
             this.addProdBut.TabIndex = 6;
             this.addProdBut.Text = "Add Product";
             this.addProdBut.UseVisualStyleBackColor = true;
+            this.addProdBut.Click += new System.EventHandler(this.addProdBut_Click);
             // 
             // newProd
             // 
@@ -102,11 +103,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(285, 183);
             this.Controls.Add(this.addProdBut);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.listPriceTxt);
             this.Controls.Add(this.listPriceInput);
-            this.Controls.Add(this.prodNumberInput);
+            this.Controls.Add(this.prodNumberTxt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.prodNameInput);
+            this.Controls.Add(this.prodNameTxt);
             this.Controls.Add(this.label1);
             this.Name = "newProd";
             this.Text = "newProd";
@@ -118,10 +119,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox prodNameInput;
-        private System.Windows.Forms.TextBox prodNumberInput;
+        private System.Windows.Forms.TextBox prodNameTxt;
+        private System.Windows.Forms.TextBox prodNumberTxt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox listPriceTxt;
         private System.Windows.Forms.Label listPriceInput;
         private System.Windows.Forms.Button addProdBut;
     }

@@ -82,5 +82,7 @@ namespace CS_SS17_Final_Project
             newSalesOrder newSalesOrderForm = new newSalesOrder();
             DialogResult dr = newSalesOrderForm.ShowDialog();
         }
+
+       
     }
 }
